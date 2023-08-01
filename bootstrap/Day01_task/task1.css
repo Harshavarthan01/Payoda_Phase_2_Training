@@ -1,0 +1,18 @@
+header{
+    color: white;
+    background: black;
+    padding: 10px;
+    letter-spacing: 7px;
+    font-family: monospace;
+    font-size: xxx-large;
+}
+
+footer{
+    color: white;
+    background: black;
+    padding: 10px;
+}
+
+body{
+    background: #e5e1e1;
+}
