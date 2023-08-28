@@ -1,0 +1,21 @@
+<div class="container">
+  <input
+    class="form-control"
+    type="number"
+    [(ngModel)]="temperature"
+    placeholder="Enter temperature"
+  />
+  <select class="form-control" [(ngModel)]="selectedUnit">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+  </select>
+  <button class="btn btn-primary" (click)="convertTemperature()">
+    Convert
+  </button>
+  <div *ngIf="convertedTemperature !== null" class="result">
+    <strong>
+      Result : {{ convertedTemperature | number : "1.2-2" }}
+      {{ selectedUnit | uppercase }}</strong
+    >
+  </div>
+</div>
